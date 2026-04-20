@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>플렉스 박스</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .left-box,
+      .title,
+      .right-box {
+        flex: 1;
+      }
+      .header {
+        display: flex;
+        background: #ccc;
+        padding: 10px;
+      }
+
+      /* 3칸 구조 */
+      .left-box,
+      .title,
+      .right-box {
+        flex: 1;
+      }
+
+      .left-box {
+        display: flex;
+        justify-content: flex-start;
+      }
+
+      .right-box {
+        display: flex;
+        justify-content: right;
+        align-items: flex-end;
+      }
+
+      .logo {
+        background: yellow;
+        padding: 10px 15px;
+        font-weight: bold;
+        color: orange;
+      }
+
+      .title {
+        text-align: center;
+        font-size: 1.5em;
+      }
+
+      .menu {
+        display: flex;
+        gap: 60px;
+      }
+
+      .menu span {
+        font-size: 14px;
+        color: white;
+      }
+
+      .main {
+        display: flex;
+        gap: 20px;
+      }
+
+      .left {
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .post {
+        background: #ffffff;
+        padding: 30px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+      }
+
+      .right {
+        flex: 1;
+        background: #ddd;
+        padding: 20px;
+        text-align: left;
+        padding-left: 50px;
+      }
+
+      .footer {
+        background: #ccc;
+        text-align: center;
+        padding: 20px;
+        margin-top: 10px;
+        font-size: 1.5em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="left-box">
+          <div class="logo">로고</div>
+        </div>
+
+        <div class="title">Header</div>
+
+        <div class="right-box">
+          <nav class="menu">
+            <span>메뉴1</span>
+            <span>메뉴2</span>
+            <span>메뉴3</span>
+          </nav>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="left">
+          <div class="post">첫 번째 포스트</div>
+          <div class="post">두 번째 포스트</div>
+          <div class="post">세 번째 포스트</div>
+        </div>
+
+        <aside class="right">Right Content (Sidebar)</aside>
+      </main>
+
+      <footer class="footer">Footer</footer>
+    </div>
+  </body>
+</html>
