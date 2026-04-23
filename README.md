@@ -42,7 +42,7 @@ BLT 샌드위치를 소개하고 만드는 방법을 안내합니다.
 
 ## 🖼 실행 화면 및 코드
 
-![preview](https://raw.githubusercontent.com/seo941024/Web-PRG/blob/master/web_practice/LetsgoBLT.png)
+![preview](https://raw.githubusercontent.com/seo941024/Web-PRG/master/web_practice/LetsgoBLT.png)
 
 ```markdown
 <!doctype html>
